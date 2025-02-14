@@ -7,30 +7,55 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="leftContainer">
-        <!-- <p id="backgroundImage"></p> -->
-        <!-- <img id="backgroundImage" src="./images/background-img.png"> -->
-        <div id="logoContainer">
-            <div id="imgContainer">
-                <p id="pLogo"><img id="logo" src="./images/odin-lined.png"></p>
+    <div id="main">
+        <div id="leftContainer">
+            <p id="logoName">ODIN</p>
+        </div>
+
+        <div id="rightContainer">
+            <div class="right" id="infoHeader">
+                <h2>Right Heading</h1>
             </div>
-            <p id="brandText">ODIN</p>
-        </div>
-        <p>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
-        <!-- background image -->s
-        <!-- logo + name -->
-        <!-- photo credit on bottom Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-    </div>
-
-    <div id="rightContainer">
-        <div class="right" id="infoHeader">
-
-        </div>
-        <div class="right" id="formContainer">
-
-        </div>
-        <div class="right" id="rightFooter">
-
+            <div class="right" id="formContainer">
+                <h2>Let's do this!</h2>
+                <form>
+                    <div class="formRow">
+                        <div class="formStack">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name="firstName" id="firstName">
+                        </div>
+                        <div class="formStack">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+                    </div>
+                    
+                    <div class="formRow">
+                        <div class="formStack">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="formStack">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="formRow">
+                        <div class="formStack">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="formStack">
+                            <label for="passwordConfirm">Confirm Password:</label>
+                            <input type="password" name="passwordConfirm" id="passwordConfirm">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="right" id="rightFooter">
+                <h2>Button+</h2>
+            </div>
         </div>
     </div>
 </body>
