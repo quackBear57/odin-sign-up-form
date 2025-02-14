@@ -1,0 +1,25 @@
+body {
+    display: flex;
+}
+
+@font-face {
+    font-family: odin-font;
+    src: url(./Norse-Bold.otf);
+}
+
+#leftContainer{
+    min-width: 600px;
+}
+
+#brandText {
+    font-family: odin-font;
+    font-weight: 500;
+}
+
+#backgroundImage{
+    background-image: url(./images/background-img.png);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 800px;
+}
