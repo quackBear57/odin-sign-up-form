@@ -9,10 +9,13 @@
 
 body {
     margin:0;
+    font-family: sans-serif;
 }
 
 h1, h2 {
     margin:0;
+    /* font-family: sans-serif; */
+    font-weight: 600;
 }
 
 h2 {
@@ -39,12 +42,29 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     width: 35vw;
+    flex-shrink: 0;
 }
 
-#logoText {
+#logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 150px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.55);
+    /* text-align: center; */
+}
+
+#imgLogo {
+    height: 100px;
+}
+
+#logoName {
     font-family: odin-font, sans-serif;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 5rem;
+    color: white;
 }
 
 #rightContainer {
@@ -56,6 +76,12 @@ h2 {
 
 #infoHeader {
     padding: var(--rightContainerPadding);
+}
+
+.headerText {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: sans-serif;
 }
 
 #formContainer {
@@ -81,4 +107,9 @@ h2 {
 
 #rightFooter {
     padding: var(--rightContainerPadding);
+}
+
+.footerText {
+    font-size: 1rem;
+    font-weight: 400;
 }

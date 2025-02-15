@@ -9,52 +9,65 @@
 <body>
     <div id="main">
         <div id="leftContainer">
-            <p id="logoName">ODIN</p>
+            <div id="logoContainer">
+                <img src="./images/odin-lined.png" id="imgLogo">
+                <p id="logoName">ODIN</p>
+            </div>
         </div>
 
         <div id="rightContainer">
             <div class="right" id="infoHeader">
-                <h2>Right Heading</h1>
+                <p class="headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Vivamus tempor vehicula fermentum. Nunc bibendum massa sed 
+                    finibus posuere. Duis vehicula viverra sapien id semper.</p>
+                <p class="headerText">Fusce elementum at quam sed pharetra.</p>
             </div>
             <div class="right" id="formContainer">
                 <h2>Let's do this!</h2>
                 <form>
                     <div class="formRow">
                         <div class="formStack">
-                            <label for="firstName">First Name:</label>
+                            <label for="firstName">First Name</label>
                             <input type="text" name="firstName" id="firstName">
                         </div>
                         <div class="formStack">
-                            <label for="lastName">Last Name:</label>
+                            <label for="lastName">Last Name</label>
                             <input type="text" name="lastName" id="lastName">
                         </div>
                     </div>
                     
                     <div class="formRow">
                         <div class="formStack">
-                            <label for="email">Email:</label>
+                            <label for="email">Email</label>
                             <input type="email" name="email" id="email">
                         </div>
                         <div class="formStack">
-                            <label for="phone">Phone Number:</label>
+                            <label for="phone">Phone Number</label>
                             <input type="tel" name="phone" id="phone">
                         </div>
                     </div>
                     
                     <div class="formRow">
                         <div class="formStack">
-                            <label for="password">Password:</label>
-                            <input type="password" name="password" id="password">
+                            <label for="password">Password</label>
+                            <input type="password"
+                                    name="password"
+                                    id="password">
                         </div>
                         <div class="formStack">
-                            <label for="passwordConfirm">Confirm Password:</label>
-                            <input type="password" name="passwordConfirm" id="passwordConfirm">
+                            <label for="passwordConfirm">Confirm Password</label>
+                            <input type="password"
+                                    name="passwordConfirm"
+                                    id="passwordConfirm">
                         </div>
                     </div>
                 </form>
             </div>
             <div class="right" id="rightFooter">
-                <h2>Button+</h2>
+                <button type="submit" id="btnSubmit">Create Account</button>
+                <p class="footerText">Already have an account? 
+                    <a href="">Log In</a>
+                </p>
             </div>
         </div>
     </div>
