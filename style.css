@@ -105,8 +105,41 @@ h2 {
     flex-direction: column;
 }
 
+label {
+    font-size: 0.9rem;
+    color: rgb(90, 90, 90);
+    padding-bottom: 4px;
+}
+
+input {
+    margin-bottom: 6px;
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 4px;
+    padding: 4px;
+}
+
+input:focus {
+    border: 2px solid #2d15b8;
+    box-shadow: 0 0 1px 1px rgb(15, 142, 247);
+    margin: -1px;
+    outline: none;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border: 1px solid #f70505;
+}
+
 #rightFooter {
     padding: var(--rightContainerPadding);
+}
+
+#btnSubmit {
+    color: white;
+    background-color: #596D48;
+    padding: 12px 40px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.35);
+    font-size: 1.1rem;
 }
 
 .footerText {

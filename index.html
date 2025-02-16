@@ -24,52 +24,73 @@
             </div>
             <div class="right" id="formContainer">
                 <h2>Let's do this!</h2>
-                <form>
+                <form id="myForm">
                     <div class="formRow">
                         <div class="formStack">
-                            <label for="firstName">First Name</label>
-                            <input type="text" name="firstName" id="firstName">
+                            <label for="firstName">First Name *</label>
+                            <input type="text"
+                                    name="firstName"
+                                    id="firstName"
+                                    required
+                                    placeholder=" ">
                         </div>
                         <div class="formStack">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" name="lastName" id="lastName">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text"
+                                    name="lastName"
+                                    id="lastName"
+                                    required
+                                    placeholder=" ">
                         </div>
                     </div>
                     
                     <div class="formRow">
                         <div class="formStack">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <label for="email">Email *</label>
+                            <input type="email"
+                                    name="email"
+                                    id="email"
+                                    required
+                                    placeholder=" ">
                         </div>
                         <div class="formStack">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" name="phone" id="phone">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    required
+                                    placeholder=" ">
                         </div>
                     </div>
                     
                     <div class="formRow">
                         <div class="formStack">
-                            <label for="password">Password</label>
+                            <label for="password">Password *</label>
                             <input type="password"
                                     name="password"
-                                    id="password">
+                                    id="password"
+                                    required
+                                    placeholder=" ">
                         </div>
                         <div class="formStack">
-                            <label for="passwordConfirm">Confirm Password</label>
+                            <label for="passwordConfirm">Confirm Password *</label>
                             <input type="password"
                                     name="passwordConfirm"
-                                    id="passwordConfirm">
+                                    id="passwordConfirm"
+                                    required
+                                    placeholder=" ">
                         </div>
                     </div>
                 </form>
             </div>
             <div class="right" id="rightFooter">
-                <button type="submit" id="btnSubmit">Create Account</button>
+                <button type="submit" id="btnSubmit" form="myForm">Create Account</button>
                 <p class="footerText">Already have an account? 
                     <a href="">Log In</a>
                 </p>
             </div>
         </div>
     </div>
+    <script src="./javascript.js"></script>
 </body>
 </html>
